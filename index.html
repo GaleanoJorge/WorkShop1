@@ -10,6 +10,56 @@
 
     <!-- En el style cada uno de los integrantes debe crear su propio estilo agregando sus propias clases y los parámetros de las mismas -->
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        .encabezado__menu{
+            height: 35px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;            
+            position: fixed;
+            top: 0;
+
+        }
+        .menu__logo{
+            width: 50%;
+            background-color: blanchedalmond;
+            
+        }
+        .logo__imagen{
+            width: 50%;
+
+        }        
+        .menu__lista{
+            list-style-type: none;
+            text-align: end;
+            width: 50%;
+            background-color: blanchedalmond;
+
+        }
+        .main__menu{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: large;
+        }
+        .main-menu__item{
+            display: inline-flex;
+        }
+        .encabezado__imagen{
+            
+            background-color: blanchedalmond;
+            margin-top: 35px;
+
+        }
+        .imagen-principal{
+            width:100%;
+            
+        }
         body{
             min-width: 1200px;
         }
@@ -66,11 +116,39 @@
         .service-name{
             font-family: Impact, Charcoal, sans-serif;
         }
-
     </style>
 
     <!-- Header: Aquí debe ponerse el menú de navegación a las 3 secciones internas: servicios, notivcias, equipo junto con un título WorkShop1-->
-    <div></div>
+    <header>
+        <div class="encabezado">
+            <div class="encabezado__menu">
+                <div class="menu__logo">
+                    <img class="logo__imagen" src="./workshop.png" alt="Logo workshop">
+                </div>
+                <nav class="menu__lista">
+                    <ul class="main__menu">
+                        <li class="main-menu__item">
+                            <a href="./index.html" class="main-menu__link">Inicio</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#services" class="main-menu__link">Servicios</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#news" class="main-menu__link">Noticias</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#team" class="main-menu__link">Equipo</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="encabezado__imagen">
+                <img class="imagen-principal" src="./header.png" alt="Encabezado">
+            </div>
+
+        </div>
+    </header>
 
     <!-- Servicios: Esta sección debe estar dividida en 3 columnas con la descripción de 3 servicios que ofrezcamos cualesquiera, cada uno con una imagen descriptiva -->
     <div></div>
