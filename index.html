@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web</title>
+</head>
+<body>
+    <!-- Cada uno de os integrantes creará una rama propia de la actividad que desarrollará, aquel que se encargue del desarrollo de dos actividades creará 2 ramas, una para cada actividad -->
+
+    <!-- En el style cada uno de los integrantes debe crear su propio estilo agregando sus propias clases y los parámetros de las mismas -->
+    <style>
+        aside,
+        article,
+        section,
+        nav,
+        Header,
+        footer {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        #izquierda {
+            background: #58D68D;
+            float: left;
+            width: 180;
+            height: 341;
+            border-collapse: separate;
+            border-spacing: 5px 10px;
+            border: 4px solid #000;
+            margin: 2px;
+        }
+
+        #centro {
+            background: #85C1E9;
+            float: left;
+            width: 180;
+            height: 341;
+            border-collapse: separate;
+            border-spacing: 5px 10px;
+            border: 5px solid #000;
+            margin : 2px;
+        }
+
+        #derecha {
+            background: #C39BD3;
+            float: legit pusft;
+            width: 180;
+            height: 341;
+            border-collapse: separate;
+            border-spacing: 5px 10px;
+            border: 5px solid #000;
+            margin : 2px;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        .encabezado__menu{
+            height: 35px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;            
+            position: fixed;
+            top: 0;
+
+        }
+        .menu__logo{
+            width: 50%;
+            background-color: blanchedalmond;
+            
+        }
+        .logo__imagen{
+            width: 50%;
+
+        }        
+        .menu__lista{
+            list-style-type: none;
+            text-align: end;
+            width: 50%;
+            background-color: blanchedalmond;
+
+        }
+        .main__menu{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: large;
+        }
+        .main-menu__item{
+            display: inline-flex;
+        }
+        .encabezado__imagen{
+            
+            background-color: blanchedalmond;
+            margin-top: 35px;
+
+        }
+        .imagen-principal{
+            width:100%;
+            
+        }
+        body{
+            min-width: 1200px;
+        }
+        .colum-4{
+            width: 24%;
+            height: 470px;
+            display: inline-block;
+            margin: 5px 4px 0;
+            text-align: center;
+            background-color: #fa9c1d;
+        }
+        .colum-2{
+            width: 24%;
+            height: 470px;
+            display: inline-block;
+            margin: 5px 4px 0;
+            text-align: center;
+            background-color: #a4cc3d;
+        }
+        .colum-3{
+            width: 24%;
+            height: 470px;
+            display: inline-block;
+            margin: 5px 4px 0;
+            text-align: center;
+            background-color:#362f34;
+        }
+        .colum-1{
+            width: 24%;
+            height: 470px;
+            display: inline-block;
+            margin: 5px 4px 0;
+            text-align: center;
+            background-color: #195080;
+        }
+        .section-3{
+            height: 500px;
+            background-color: #fbebcb;
+        }
+        .section-text{
+            margin: 0;
+            color: black;
+            background: #74acd8;
+            font-weight: bold;
+            text-align: center;
+        }
+        .service-content{
+            padding: 0.5em 0;
+        }
+        .service-text.memebers{
+            margin: 0px 10px 0;
+            font-family: "Trebuchet MS", Helvetica, sans-serif; 
+        }
+        .service-name{
+            font-family: Impact, Charcoal, sans-serif;
+        }
+    </style>
+
+    <!-- Header: Aquí debe ponerse el menú de navegación a las 3 secciones internas: servicios, notivcias, equipo junto con un título WorkShop1-->
+    <header>
+        <div class="encabezado">
+            <div class="encabezado__menu">
+                <div class="menu__logo">
+                    <img class="logo__imagen" src="./workshop.png" alt="Logo workshop">
+                </div>
+                <nav class="menu__lista">
+                    <ul class="main__menu">
+                        <li class="main-menu__item">
+                            <a href="./index.html" class="main-menu__link">Inicio</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#services" class="main-menu__link">Servicios</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#news" class="main-menu__link">Noticias</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#team" class="main-menu__link">Equipo</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="encabezado__imagen">
+                <img class="imagen-principal" src="./header.png" alt="Encabezado">
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Servicios: Esta sección debe estar dividida en 3 columnas con la descripción de 3 servicios que ofrezcamos cualesquiera, cada uno con una imagen descriptiva -->
+    <div id = "services">
+        <aside id="izquierda">
+            <p align="center">
+                <img src="https://mitrovich.com.co/wp-content/uploads/2020/10/inter-1.png" 
+                    width="280"
+                    height="247"></br>
+                </br>
+                Recogida en puerta</br>
+                En nuestra empresa nos importa tu comodidad,</br>
+                así que contamos con este servicio para que no</br>
+                debas salir de casa para enviar tus paquetes</br>
+                a su nuevo hogar</br>
+            </br>
+                <a href="https://www.tcc.com.co/courier/mensajeria-productos-y-servicios/solicitar-recogida/">
+                    Ver mas
+                </a>
+            </p>
+        </aside>
+        <article id="centro">
+            <p align="center">
+                <img src="https://image.flaticon.com/icons/png/512/1988/1988260.png" width="350" height="245"></br>
+                </br>
+                Transporte de documentos unitarios</br>
+                No solo hacemos la entrega, transporte y envío de documentos unitarios, </br>
+                los recogemos en la puerta de tu casa</br>
+                y los llevamos hasta su destino en el tiempo que</br>
+                requieras.</br>
+            </br>
+            <a href="https://www.servientrega.com/wps/portal/Colombia/personas/soluciones/entrega-documentos">
+                Ver mas
+            </a>
+            </p>
+        </article>
+        <aside id="derecha">
+            <p align="center">
+                <img src="https://image.flaticon.com/icons/png/512/1123/1123499.png" width="350" height="229"></br>
+                </br>
+                Pagos contra entrega</br>
+                Pensamos en tu comodidad,</br>
+                por eso hemos habilitado la opcion para pagos contra entrega</br>
+                facilitando la forma en la que recibes tus paquetes,</br>
+                garantizando la llegada de los envios hechos </br>
+                a traves de nuestra empresa</br>
+            </br>
+            <a href="https://www.tcc.com.co/pagos-contra-entrega/">
+                Ver mas
+            </a>
+            </p>
+        </aside>
+
+    </div>
+
+    <!-- Noticias: Esta sección debe estar dividida en 2 columnas y 2 filas para un total de 4 recuadros, cada una con el resumen e imagen de una joticia distinta y real, además de un vinculo que permita ir al enlace original de la noticia -->
+    <div></div>
+
+    <!-- Equipo: Esta sección debe contar con una columna para cada miembro del equipo con la descripción y una foto o imagen que lo represente -->
+    <div id="team" class="section-3">
+        <p class="section-text">Seccion 3</p>
+        <div class="colum-1">
+                <p>
+
+                    <img src="Jorge.png" alt="" height="150" style="margin: 0cm;">
+                </p>
+                <div class="service-content">
+
+                    <h2 class="service-name">
+                        Jorge Andres Galeano Bayona
+                    </h2>
+                    <p class="service-text memebers">
+                        Edad: 25 años. <br><br>
+
+                        Profesión: Ingeniero Mecatrónico <br><br>
+
+                        Estudiante del curso <b>Misiontic</b>, futuro emprendedor en negocio de base digital.
+                    </p>
+                </div>
+            </div>
+        <div class="colum-2">
+                <p>
+
+                    <img src="AndresGomez.PNG" alt="" height="150" style="margin: 0cm;">
+                </p>
+                <div class="service-content">
+
+                    <h2 class="service-name">
+                        Andrés David Gómez Arroyave
+                    </h2>
+                    <p class="service-text memebers">
+                        Edad: 18 años. <br><br>
+
+                        Profesión: Estudiante <br><br>
+
+                        Futuro ingeniero <b>mecánico</b> con énfasis en optimización.
+                    </p>
+                </div>
+            </div>
+        <div class="colum-3">
+                <p>
+
+                    <img src="AlexAngel.PNG" alt="" height="150" style="margin: 0cm;">
+                </p>
+                <div class="service-content">
+
+                    <h2 class="service-name">
+                        Alex Santiago Angel Zambrano
+                    </h2>
+                    <p class="service-text memebers">
+                        Edad: 18 años. <br><br>
+                        Profesión: Estudiante de programación <br><br>
+                        Futuro <b>desarrollador</b> y socio de empresas afines a la informática.
+                    </p>
+                </div>
+            </div>
+        <div class="colum-4">
+                <p>
+
+                    <img src="DavidV.PNG" alt="" height="150" style="margin: 0cm;">
+                </p>
+                <div class="service-content">
+
+                    <h2 class="service-name">
+                        Daniel Vargas Bermudez
+                    </h2>
+                    <p class="service-text memebers">
+                        Edad: 27 años. <br><br>
+                        Profesión: Ingeniero de Alimentos <br><br>
+                        Estudiante del curso <b>Misiontic</b>, futuro emprendedor en negocio de base digital.
+                    </p>
+                </div>
+            </div>
+
+
+    </div>
+
+    <!-- Footer: Esta sección debe contar con  información de contacto, deberá estar dividido en dos partes, en una se tendrá la información del sitio web como el motivante del desarrollo y el enlace al repositorio de github, y en la otra los contacto de los miembros del equipo con sus nombres y roles -->
+    <footer></footer>
+</body>
+</html>
