@@ -10,7 +10,7 @@
 
     <!-- En el style cada uno de los integrantes debe crear su propio estilo agregando sus propias clases y los parámetros de las mismas -->
     <style>
-        aside,
+       /* aside,
         article,
         section,
         nav,
@@ -19,43 +19,46 @@
             display: block;
             margin: 0;
             padding: 0;
-        }
-        #izquierda {
+        }*/
+        .izquierda {
             background: #58D68D;
-            float: left;
-            width: 180;
+            /*float: left;*/
+            display: inline-block;
+            width: 31%;
             height: 341;
-            border-collapse: separate;
-            border-spacing: 5px 10px;
-            border: 4px solid #000;
-            margin: 2px;
+            /*border-collapse: separate;*/
+            /*border-spacing: 5px 10px;*/
+            border: 5px solid #000;
+            /*margin: 2px;*/
         }
 
-        #centro {
+        .centro {
             background: #85C1E9;
-            float: left;
-            width: 180;
+            /*float: left;*/
+            display: inline-block;
+            width: 33%;
             height: 341;
-            border-collapse: separate;
-            border-spacing: 5px 10px;
+            /*border-collapse: separate;*/
+            /*border-spacing: 5px 10px;*/
             border: 5px solid #000;
-            margin : 2px;
+            /*margin : 2px;*/
         }
 
-        #derecha {
+        .derecha {
             background: #C39BD3;
-            float: legit pusft;
-            width: 180;
+            /*float: left;*/
+            display: inline-block;
+            width: 33%;
             height: 341;
-            border-collapse: separate;
-            border-spacing: 5px 10px;
+            /*border-collapse: separate;*/
+            /*border-spacing: 5px 10px;*/
             border: 5px solid #000;
-            margin : 2px;
+            /*margin : 2px;*/
         }
         html, body {
             margin: 0;
             padding: 0;
-        }
+        }   
         
         
         .encabezado__menu{
@@ -194,11 +197,11 @@
 
     <!-- Servicios: Esta sección debe estar dividida en 3 columnas con la descripción de 3 servicios que ofrezcamos cualesquiera, cada uno con una imagen descriptiva -->
     <div id = "services">
-        <aside id="izquierda">
+        <aside class="izquierda">
             <p align="center">
                 <img src="https://mitrovich.com.co/wp-content/uploads/2020/10/inter-1.png" 
                     width="280"
-                    height="247"></br>
+                    height="250"></br>
                 </br>
                 Recogida en puerta</br>
                 En nuestra empresa nos importa tu comodidad,</br>
@@ -211,9 +214,9 @@
                 </a>
             </p>
         </aside>
-        <article id="centro">
+        <article class="centro">
             <p align="center">
-                <img src="https://image.flaticon.com/icons/png/512/1988/1988260.png" width="350" height="245"></br>
+                <img src="https://image.flaticon.com/icons/png/512/1988/1988260.png" width="280" height="230"></br>
                 </br>
                 Transporte de documentos unitarios</br>
                 No solo hacemos la entrega, transporte y envío de documentos unitarios, </br>
@@ -226,9 +229,9 @@
             </a>
             </p>
         </article>
-        <aside id="derecha">
+        <aside class="derecha">
             <p align="center">
-                <img src="https://image.flaticon.com/icons/png/512/1123/1123499.png" width="350" height="229"></br>
+                <img src="https://image.flaticon.com/icons/png/512/1123/1123499.png" width="250" height="230"></br>
                 </br>
                 Pagos contra entrega</br>
                 Pensamos en tu comodidad,</br>
