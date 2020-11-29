@@ -10,36 +10,28 @@
 
     <!-- En el style cada uno de los integrantes debe crear su propio estilo agregando sus propias clases y los parámetros de las mismas -->
     <style>
-        .servicio1{
+        .izquierda {
             background: #58D68D;
-            width: 30%;
+            display: inline-block;
+            width: 31%;
             height: 341;
-            border-collapse: separate;
-            border-spacing: 5px 10px;
-            border: 4px solid #000;
-            margin: 2px 2px 0;
-        }
-        .servicio2{
-            background: #85C1E9;
-            width: 30%;
-            height: 341;
-            border-collapse: separate;
-            border-spacing: 5px 10px;
             border: 5px solid #000;
-            margin : 2px 2px 0;
-        }
-        .servicio3{
-            background: #C39BD3;
-            width: 30%;
-            height: 341;
-            border-collapse: separate;
-            border-spacing: 5px 10px;
+            }
+
+        .centro {
+            background: #85C1E9;            
+            display: inline-block;
+            width: 33%;
+            height: 341;           
             border: 5px solid #000;
-            margin : 2px 2px 0;
         }
-        .container{
-            background: #c1bfc2;
-            height: 600px;
+
+        .derecha {
+            background: #C39BD3;            
+            display: inline-block;
+            width: 33%;
+            height: 341;            
+            border: 5px solid #000;            
         }
     </style>
 
@@ -47,57 +39,56 @@
     <div></div>
 
     <!-- Servicios: Esta sección debe estar dividida en 3 columnas con la descripción de 3 servicios que ofrezcamos cualesquiera, cada uno con una imagen descriptiva -->
-    <div id="services">
-        <div class="container">
-            <div class="servicio1">
-                <p class="servicio1-texto">
-                    <img src="https://mitrovich.com.co/wp-content/uploads/2020/10/inter-1.png" 
-                        width="280"
-                        height="247"></br>
-                    </br>
-                    Recogida en puerta</br>
-                    En nuestra empresa nos importa tu comodidad,</br>
-                    así que contamos con este servicio para que no</br>
-                    debas salir de casa para enviar tus paquetes</br>
-                    a su nuevo hogar</br>
+    <div id = "services">
+        <aside class="izquierda">
+            <p align="center">
+                <img src="https://mitrovich.com.co/wp-content/uploads/2020/10/inter-1.png" 
+                    width="280"
+                    height="250"></br>
                 </br>
-                    <a href="https://www.tcc.com.co/courier/mensajeria-productos-y-servicios/solicitar-recogida/">
-                        Ver mas
-                    </a>
-                </p>
-            </div>
-            <div class="servicio2">
-                <p clas="servicio2-texto">
-                    <img src="https://image.flaticon.com/icons/png/512/1988/1988260.png" width="350" height="245"></br>
-                    </br>
-                    Transporte de documentos unitarios</br>
-                    No solo hacemos la entrega, transporte y envío de documentos unitarios, </br>
-                    los recogemos en la puerta de tu casa</br>
-                    y los llevamos hasta su destino en el tiempo que</br>
-                    requieras.</br>
-                </br>
-                <a href="https://www.servientrega.com/wps/portal/Colombia/personas/soluciones/entrega-documentos">
+                Recogida en puerta</br>
+                En nuestra empresa nos importa tu comodidad,</br>
+                así que contamos con este servicio para que no</br>
+                debas salir de casa para enviar tus paquetes</br>
+                a su nuevo hogar</br>
+            </br>
+                <a href="https://www.tcc.com.co/courier/mensajeria-productos-y-servicios/solicitar-recogida/">
                     Ver mas
                 </a>
-                </p>
-            </div>
-            <div class="servicio3">
-                <p class="servicio3-texto">
-                    <img src="https://image.flaticon.com/icons/png/512/1123/1123499.png" width="350" height="229"></br>
-                    </br>
-                    Pagos contra entrega</br>
-                    Pensamos en tu comodidad,</br>
-                    por eso hemos habilitado la opcion para pagos contra entrega</br>
-                    facilitando la forma en la que recibes tus paquetes,</br>
-                    garantizando la llegada de los envios hechos </br>
-                    a traves de nuestra empresa</br>
+            </p>
+        </aside>
+        <article class="centro">
+            <p align="center">
+                <img src="https://image.flaticon.com/icons/png/512/1988/1988260.png" width="280" height="230"></br>
                 </br>
-                <a href="https://www.tcc.com.co/pagos-contra-entrega/">
-                    Ver mas
-                </a>
-                </p>
-            </div>
-        </div>
+                Transporte de documentos unitarios</br>
+                No solo hacemos la entrega, transporte y envío de documentos unitarios, </br>
+                los recogemos en la puerta de tu casa</br>
+                y los llevamos hasta su destino en el tiempo que</br>
+                requieras.</br>
+            </br>
+            <a href="https://www.servientrega.com/wps/portal/Colombia/personas/soluciones/entrega-documentos">
+                Ver mas
+            </a>
+            </p>
+        </article>
+        <aside class="derecha">
+            <p align="center">
+                <img src="https://image.flaticon.com/icons/png/512/1123/1123499.png" width="250" height="230"></br>
+                </br>
+                Pagos contra entrega</br>
+                Pensamos en tu comodidad,</br>
+                por eso hemos habilitado la opcion para pagos contra entrega</br>
+                facilitando la forma en la que recibes tus paquetes,</br>
+                garantizando la llegada de los envios hechos </br>
+                a traves de nuestra empresa</br>
+            </br>
+            <a href="https://www.tcc.com.co/pagos-contra-entrega/">
+                Ver mas
+            </a>
+            </p>
+        </aside>
+
     </div>
 
     <!-- Noticias: Esta sección debe estar dividida en 2 columnas y 2 filas para un total de 4 recuadros, cada una con el resumen e imagen de una joticia distinta y real, además de un vinculo que permita ir al enlace original de la noticia -->
